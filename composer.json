@@ -1,0 +1,5 @@
+{
+    "require": {
+        "cviebrock/eloquent-sluggable": "^8.0"
+    }
+}
