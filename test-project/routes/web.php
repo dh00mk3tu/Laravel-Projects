@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,15 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/products', [ProductsController::class, 'index']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/users', function() { 
-    return ['test','test2', 'test3'];
-});
-
+// or 
+// Route::get('/products', 'App\Http\Controllers\ProductsController@index');
 
 // firstproject.com == /
 // firstproject.com/users == /users
