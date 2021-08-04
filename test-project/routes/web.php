@@ -12,10 +12,10 @@ use App\Http\Controllers\ProductsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/products', [ProductsController::class, 'index']);
+// Route::get('/products', [ProductsController::class, 'index']);
 
 // or 
-// Route::get('/products', 'App\Http\Controllers\ProductsController@index');
+Route::get('/productstisan ', 'App\Http\Controllers\ProductsController@index');
 
 // firstproject.com == /
 // firstproject.com/users == /users
